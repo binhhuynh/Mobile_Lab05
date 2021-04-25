@@ -17,7 +17,7 @@ public class TikiActivity extends AppCompatActivity {
         Product[] cables = Product.cables;
         Product[] books = Product.books;
 
-        RecyclerView cable_recycler = (RecyclerView) findViewById(R.id.book_recycler);
+        RecyclerView cable_recycler = (RecyclerView) findViewById(R.id.cable_recycler);
 
         ProductAdapter cableAdapter = new ProductAdapter(cables);
 
