@@ -9,13 +9,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Mobile_Lab05">
-        <activity android:name=".DonutDetailActivity"></activity>
-        <activity android:name=".DonutCategoryActivity">
+        <activity android:name=".TikiActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".DonutDetailActivity" />
+        <activity android:name=".DonutCategoryActivity">
+
         </activity>
     </application>
 
