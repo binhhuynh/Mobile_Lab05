@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChairDetailActivity">
+
+    <ImageView
+        android:id="@+id/ivChair"
+        android:layout_width="match_parent"
+        android:layout_height="325dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/tvDChairName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/ivChair"
+        app:layout_constraintTop_toBottomOf="@+id/ivChair" />
+
+    <TextView
+        android:id="@+id/tvDChairPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:background="@null"
+        android:text="TextView"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/tvDChairName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvDChairName" />
+
+    <ImageButton
+        android:id="@+id/imgBtnRemove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@null"
+        app:layout_constraintStart_toStartOf="@+id/tvDChairName"
+        app:layout_constraintTop_toBottomOf="@+id/tvDChairName"
+        app:srcCompat="@drawable/ic_action_circle_remove" />
+
+    <TextView
+        android:id="@+id/tvDChairQuantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="1"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imgBtnRemove"
+        app:layout_constraintStart_toEndOf="@+id/imgBtnRemove"
+        app:layout_constraintTop_toTopOf="@+id/imgBtnRemove" />
+
+    <ImageButton
+        android:id="@+id/imgBtnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:background="@null"
+        app:layout_constraintBottom_toBottomOf="@+id/tvDChairQuantity"
+        app:layout_constraintStart_toEndOf="@+id/tvDChairQuantity"
+        app:layout_constraintTop_toTopOf="@+id/tvDChairQuantity"
+        app:srcCompat="@drawable/ic_action_circle_add" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Product Details"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/imgBtnRemove"
+        app:layout_constraintTop_toBottomOf="@+id/imgBtnRemove" />
+
+    <TextView
+        android:id="@+id/tvDChairDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:ellipsize="end"
+        android:lines="3"
+        android:text="TextView"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textView6"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <Button
+        android:id="@+id/btnAddToCart"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#FFA500"
+        android:text="Add to cart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDChairDescription" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
