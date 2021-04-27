@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:id="@+id/cart_card_view"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    card_view:cardElevation="2dp"
+    card_view:cardCornerRadius="4dp"
+    tools:context=".ChairCartActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/ivCImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            card_view:layout_constraintBottom_toBottomOf="parent"
+            card_view:layout_constraintStart_toStartOf="parent"
+            card_view:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/tvCChairName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="TextView"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            card_view:layout_constraintStart_toEndOf="@+id/ivCImage"
+            card_view:layout_constraintTop_toTopOf="@+id/ivCImage" />
+
+        <TextView
+            android:id="@+id/tvCChairPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="TextView"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            card_view:layout_constraintStart_toStartOf="@+id/tvCChairName"
+            card_view:layout_constraintTop_toBottomOf="@+id/tvCChairName" />
+
+        <ImageButton
+            android:id="@+id/ibCRemove"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="@null"
+            card_view:layout_constraintBottom_toBottomOf="@+id/tvCChairPrice"
+            card_view:layout_constraintEnd_toStartOf="@+id/tvCChairQuantity"
+            card_view:layout_constraintTop_toTopOf="@+id/tvCChairPrice"
+            card_view:srcCompat="@drawable/ic_action_circle_remove" />
+
+        <TextView
+            android:id="@+id/tvCChairQuantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="1"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            card_view:layout_constraintBottom_toBottomOf="@+id/ibCRemove"
+            card_view:layout_constraintEnd_toStartOf="@+id/ibCAdd"
+            card_view:layout_constraintTop_toTopOf="@+id/ibCRemove" />
+
+        <ImageButton
+            android:id="@+id/ibCAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:background="@null"
+            card_view:layout_constraintBottom_toBottomOf="@+id/tvCChairQuantity"
+            card_view:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintTop_toTopOf="@+id/tvCChairQuantity"
+            card_view:srcCompat="@drawable/ic_action_circle_add" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

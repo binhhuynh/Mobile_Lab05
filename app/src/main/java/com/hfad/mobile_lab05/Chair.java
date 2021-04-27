@@ -1,5 +1,8 @@
 package com.hfad.mobile_lab05;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Chair {
     private String name;
     private String description;
@@ -14,6 +17,8 @@ public class Chair {
             new Chair("Circle Armchair", "ONE OF A KIND YACHT  INTERIOR IS MADE TO FIT YOUR BOAT TO MAKE IT AS COMFORTABLE AS YOUR HOUSE", 350, R.drawable.chair_4),
     };
 
+    public static final List<Chair> listItem = new ArrayList<Chair>();
+
     public Chair(String name, String description, double price, int quantity, int imageResourceId) {
         this.name = name;
         this.description = description;
@@ -26,6 +31,13 @@ public class Chair {
         this.name = name;
         this.description = description;
         this.price = price;
+        this.imageResourceId = imageResourceId;
+    }
+
+    public Chair(String name, double price, int quantity, int imageResourceId) {
+        this.name = name;
+        this.price = price;
+        this.quantity = quantity;
         this.imageResourceId = imageResourceId;
     }
 

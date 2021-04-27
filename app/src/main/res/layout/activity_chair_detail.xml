@@ -49,7 +49,8 @@
         android:background="@null"
         app:layout_constraintStart_toStartOf="@+id/tvDChairName"
         app:layout_constraintTop_toBottomOf="@+id/tvDChairName"
-        app:srcCompat="@drawable/ic_action_circle_remove" />
+        app:srcCompat="@drawable/ic_action_circle_remove"
+        android:onClick="onClickDecreaseQuantity"/>
 
     <TextView
         android:id="@+id/tvDChairQuantity"
@@ -71,7 +72,8 @@
         app:layout_constraintBottom_toBottomOf="@+id/tvDChairQuantity"
         app:layout_constraintStart_toEndOf="@+id/tvDChairQuantity"
         app:layout_constraintTop_toTopOf="@+id/tvDChairQuantity"
-        app:srcCompat="@drawable/ic_action_circle_add" />
+        app:srcCompat="@drawable/ic_action_circle_add"
+        android:onClick="onClickIncreaseQuantity"/>
 
     <TextView
         android:id="@+id/textView6"
